@@ -3,6 +3,7 @@ import electron from '/electron.png'
 import react from '/react.svg'
 import vite from '/vite.svg'
 import styles from 'styles/app.module.scss'
+import Button from '@material-ui/core/Button';
 
 const App: React.FC = () => {
   const [count, setCount] = useState(0)
@@ -33,9 +34,9 @@ const App: React.FC = () => {
         </div>
         <p>Hello Electron + Vite + React!</p>
         <p>
-          <button onClick={() => setCount((count) => count + 1)}>
+          <Button variant="contained" color="primary" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
-          </button>
+          </Button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
