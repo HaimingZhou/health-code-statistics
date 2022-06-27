@@ -3,7 +3,7 @@
  */
 {
   appId: "YourAppID",
-  productName: "YourAppName",
+  productName: "健康码统计",
   copyright: "Copyright © 2022 ${author}",
   asar: true,
   directories: {
